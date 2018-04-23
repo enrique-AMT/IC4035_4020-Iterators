@@ -60,7 +60,10 @@ public class LinkedPositionalList<E> implements PositionalList<E> {
 	private LinkedPositionalList<E> list;
 	
 	
-	
+	public LinkedPositionalList(PLIteratorMaker<E> iteratorMaker) {
+		this(); 
+		this.iteratorMaker = iteratorMaker;
+	}
 	
 	public LinkedPositionalList() {
 		header = new DNode<>(); 

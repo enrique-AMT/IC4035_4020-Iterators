@@ -11,8 +11,7 @@ import llPositionalList.PLIteratorF2L;
 public class LinkedPositionalListTester5 {
 
 	public static void main(String[] args) {
-		LinkedPositionalList<Integer> list1 = null; 
-				// new LinkedPositionalList<>(new L2FIteratorMaker<Integer>()); 
+		LinkedPositionalList<Integer> list1 = new LinkedPositionalList<>(new L2FIteratorMaker<Integer>()); 
 
 		Position<Integer> f = list1.addFirst(1); 
 		Position<Integer> l = list1.addLast(10);
